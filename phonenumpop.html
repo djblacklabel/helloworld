@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Popup text */
+.popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Show the popup text */
+.popup:hover .popuptext {
+  visibility: visible;
+}
+</style>
+</head>
+<body>
+
+<div class="popup" onclick="myFunction()">Click me to see my phone number
+  <span class="popuptext" id="myPopup">Your Phone Number: 603-935-5058</span>
+</div>
+
+<script>
+// Function to toggle the visibility
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
